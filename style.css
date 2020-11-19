@@ -12,8 +12,8 @@
                         "main main"
                         "section section"
                         "footer footer";
-  overflow-x: auto;
-  overflow-y: auto;
+  /* overflow-x: auto;
+  overflow-y: auto; */
   
 }
 /* referencia do layout do cabeçalho */
