@@ -1,0 +1,181 @@
+/* fontes, tamanho das letras e espaçamentos globais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tangerine', cursive;
+    font-size: 1.4rem;
+}
+/* layout com css grid da página */
+.container {
+  display: grid;
+  grid-template-areas:  "header header"
+                        "main main"
+                        "section section"
+                        "footer footer";
+  overflow-x: auto;
+  overflow-y: auto;
+  
+}
+/* referencia do layout do cabeçalho */
+#header {
+  grid-area: header;
+}
+/* espaçamento e direcionamento dos itens do cabeçalho */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #FE7483;
+  height: 7vh;
+}
+/* cor de fundo do h1 do cabeçalho */
+.img-logo h1 {
+  color: #fff;
+
+}
+/* estilização dos links de navegação da página */
+.buttons-navigation a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+/* cor dos botões ao passar o mouse */
+.buttons-navigation a:hover {
+  color: red;
+}
+/* tamanho, imagem de fundo e espaçamento da main */
+#main {
+  height: 45vh;
+  grid-area: main;
+  padding-top: 2vh;
+  background: url('./images/salgados.jpg');
+}
+/* espaçamento do texto da main */
+.text img {
+  height: 30vh;
+  width: 20vw;
+  margin: 0;
+  padding: 0;
+}
+/* tamanho da fonte da main */
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+/* alinhamento dos textos da main */
+.text, .paragraph {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 4vh;
+}
+/* espaçamento da sessão dos produtos */
+#section {
+  margin-bottom: 10vh;
+  grid-area: section;
+}
+/* layout do grid dos produtos */
+.food-container {
+  display: grid;
+  grid-template-areas: "food1 food2"
+                       "food3 food4"
+                       "food5 food6";
+  margin-top: 5vh;
+}
+/* referências dos itens do layout dos produtos */
+.food1 {
+  grid-area: food1;
+  
+}
+/* estilização das imagens da sessão */
+.image-food{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-left: 3vw;
+}
+
+.food2 {
+  grid-area: food2;
+}
+
+.food3 {
+  grid-area: food3;
+}
+
+.food4 {
+  grid-area: food4;
+}
+
+.food5 {
+  grid-area: food5;
+}
+
+.food6 {
+  grid-area: food6;
+}
+/* fim das referências */
+
+/* alinhamento das imagens e textos da sessão */
+.food1, .food2, .food3, .food4, .food5, .food6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  margin-bottom: 5vh;
+  background-color: #fff;
+  
+}
+/* espaçamento dos textos da sessão */
+.food1 p, .food2 p, .food3 p, .food4 p, .food5 p, .food6 p {
+  color: #f7344b;
+  padding-top: 5vh;
+  margin-right: 2vw;
+}
+/* altura do rodapé */
+#footer {
+  height: 7vh;
+  grid-area: footer;
+}
+/* alinhamento do container do rodapé */
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+/* tamanho das imagens do rodapé */
+.contact-container img {
+  height: 46px;
+  width: 46px;
+  text-decoration: none;
+}
+/* cor dos textos do rodapé */
+.contact-container p {
+  color: #f84459;
+  margin-right: 1vw;
+}
+
+.contact-container a {
+  text-decoration: none;
+}
+/* tamanho da imagem de seta */
+.image-arrow {
+  height: 46px;
+  width: 46px;
+  
+}
+/* alinhamento das imagens dos links do instagram e whatsapp */
+.pedido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
